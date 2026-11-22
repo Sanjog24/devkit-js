@@ -54,5 +54,10 @@
   "bugs": {
     "url": "https://github.com/sanjog24/devkit-js/issues"
   },
-  "homepage": "https://github.com/sanjog24/devkit-js#readme"
+  "homepage": "https://github.com/sanjog24/devkit-js#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.14.0"
+  }
 }
