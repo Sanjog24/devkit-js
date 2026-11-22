@@ -37,9 +37,9 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "test": "node --test \"tests/*.test.js\"",
-    "test:watch": "node --test --watch \"tests/*.test.js\"",
-    "test:coverage": "node --test --experimental-test-coverage \"tests/*.test.js\"",
+    "test": "node --test tests/*.test.js",
+    "test:watch": "node --test --watch tests/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage tests/*.test.js",
     "lint": "eslint .",
     "example": "node examples/basic-usage.js",
     "pack:check": "npm pack --dry-run",
