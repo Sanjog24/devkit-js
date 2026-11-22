@@ -252,6 +252,7 @@ npm run test:watch     # re-run tests on file changes
 npm run test:coverage  # test coverage report (experimental Node flag)
 npm run lint           # ESLint
 npm run example        # run examples/basic-usage.js
+npm run pack:check     # preview the files that will be published
 ```
 
 Project structure:
@@ -262,6 +263,7 @@ src/
   index.js          # main entry: re-exports all modules
 tests/              # node:test suites, one per module + export tests
 examples/           # runnable usage examples
+scripts/            # verify-install.mjs: smoke test for an installed copy
 ```
 
 ## Contributing

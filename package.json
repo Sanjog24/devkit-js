@@ -42,7 +42,12 @@
     "test:coverage": "node --test --experimental-test-coverage \"tests/*.test.js\"",
     "lint": "eslint .",
     "example": "node examples/basic-usage.js",
+    "pack:check": "npm pack --dry-run",
     "prepublishOnly": "npm run lint && npm test"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "engines": {
     "node": ">=18.0.0"
