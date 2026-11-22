@@ -1,0 +1,10 @@
+# The "files" field in package.json is the primary allow-list.
+# This file is a safety net for anything not covered by it.
+tests/
+examples/
+.github/
+coverage/
+*.tgz
+.DS_Store
+.eslintrc*
+eslint.config.js

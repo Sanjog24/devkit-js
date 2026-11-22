@@ -1,0 +1,58 @@
+{
+  "name": "devkit-js-utils",
+  "version": "1.0.0",
+  "description": "DevKit JS - a lightweight, dependency-free, well-tested collection of array, string, object and number utilities for modern JavaScript (ES Modules).",
+  "keywords": [
+    "utilities",
+    "utils",
+    "array",
+    "string",
+    "object",
+    "number",
+    "helpers",
+    "esm",
+    "devkit",
+    "lodash-alternative",
+    "deep-clone",
+    "slugify",
+    "bigint"
+  ],
+  "author": "Sanjog Singh (https://github.com/sanjog24)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./array": "./src/array/index.js",
+    "./string": "./src/string/index.js",
+    "./object": "./src/object/index.js",
+    "./number": "./src/number/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "test:watch": "node --test --watch \"tests/*.test.js\"",
+    "test:coverage": "node --test --experimental-test-coverage \"tests/*.test.js\"",
+    "lint": "eslint .",
+    "example": "node examples/basic-usage.js",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjog24/devkit-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanjog24/devkit-js/issues"
+  },
+  "homepage": "https://github.com/sanjog24/devkit-js#readme"
+}
